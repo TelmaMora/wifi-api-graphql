@@ -1,0 +1,8 @@
+version: '3'
+services:
+  wifi-api:
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      - MONGO_URI=${MONGO_URI} # Using the MongoDB Atlas URI from .env
